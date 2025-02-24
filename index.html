@@ -6,8 +6,8 @@
     <title>Configurazione Rete Packet Tracer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            background-color: #e3f2fd;
             margin: 0;
             padding: 0;
             text-align: center;
@@ -18,38 +18,59 @@
             background: white;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             margin-top: 30px;
         }
         h1 {
-            color: #333;
+            color: #01579b;
+            font-size: 32px;
+        }
+        h2 {
+            color: #0277bd;
+            font-size: 24px;
+            margin-top: 20px;
         }
         p {
             font-size: 18px;
-            color: #555;
+            color: #333;
             line-height: 1.6;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            font-size: 18px;
+            color: #555;
+            background: #bbdefb;
+            padding: 10px;
+            margin: 5px auto;
+            width: 50%;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         }
         .download-btn {
             display: inline-block;
             margin-top: 20px;
             padding: 12px 24px;
-            background-color: #007bff;
+            background-color: #0288d1;
             color: white;
             text-decoration: none;
             font-size: 18px;
             border-radius: 5px;
             transition: background 0.3s;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
         }
         .download-btn:hover {
-            background-color: #0056b3;
+            background-color: #01579b;
         }
         .network-image {
             width: 100%;
-            max-width: 900px; /* Dimensione massima dell'immagine */
+            max-width: 900px;
             display: block;
             margin: 20px auto;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -60,21 +81,20 @@
 
     <div class="container">
         <h1>Progetto Packet Tracer - Configurazione VLAN</h1>
-        <p>In questo progetto su **Packet Tracer**, ho creato e configurato una rete aziendale divisa in tre sedi, implementando la segmentazione della rete con **VLAN** e **Router-on-a-Stick**.</p>
+        <p>In questo progetto su <strong>Packet Tracer</strong>, ho creato e configurato una rete aziendale divisa in tre sedi, implementando la segmentazione della rete con <strong>VLAN</strong>.</p>
 
         <h2>🔧 Dettagli della Configurazione</h2>
-        <p>✔️ **Sedi:** Tre (Principale, Sede 2, Sede 3)</p>
-        <p>✔️ **Switch per sede:** 2 per router</p>
-        <p>✔️ **PC collegati per switch:** 3</p>
-        <p>✔️ **VLAN configurate:**</p>
+        <p>✔️ <strong>Sedi:</strong> Tre (Principale, Sede 2, Sede 3)</p>
+        <p>✔️ <strong>Switch per sede:</strong> 2 per router</p>
+        <p>✔️ <strong>PC collegati per switch:</strong> 3</p>
+        <p>✔️ <strong>VLAN configurate:</strong></p>
         <ul>
             <li>🔹 VLAN 10 - Amministrazione</li>
             <li>🔹 VLAN 20 - IT</li>
             <li>🔹 VLAN 30 - Vendite</li>
             <li>🔹 VLAN 40 - Ospiti</li>
         </ul>
-        <p>✔️ **Trunk tra switch e router abilitato** per la comunicazione tra VLAN</p>
-        <p>✔️ **Configurato inter-VLAN routing su ogni router** per permettere la comunicazione tra le VLAN</p>
+        <p>✔️ <strong>Trunk tra switch e router abilitato</strong> per la comunicazione tra VLAN</p>
 
         <h2>📥 Scarica il File Packet Tracer</h2>
         <a class="download-btn" href="https://raw.githubusercontent.com/tuo-username/network-configs/main/tuo-file.pkt" download>Scarica il file .pkt</a>
